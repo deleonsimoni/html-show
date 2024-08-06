@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário Evelyn!</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            animation: blink 1.5s infinite;
+        }
+        @keyframes blink {
+            0%, 100% {
+                background-color: #f0f8ff;
+            }
+            50% {
+                background-color: #ffebcd;
+            }
+        }
+        h1 {
+            color: #ff69b4;
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: text3D 2s infinite;
+        }
+        @keyframes text3D {
+            0% {
+                text-shadow: 0 0 10px rgba(255, 105, 180, 0.8), 0 0 20px rgba(255, 105, 180, 0.8), 0 0 30px rgba(255, 105, 180, 0.8);
+                transform: rotateX(0) rotateY(0);
+            }
+            50% {
+                text-shadow: 0 0 20px rgba(255, 105, 180, 0.8), 0 0 30px rgba(255, 105, 180, 0.8), 0 0 40px rgba(255, 105, 180, 0.8);
+                transform: rotateX(10deg) rotateY(10deg);
+            }
+            100% {
+                text-shadow: 0 0 10px rgba(255, 105, 180, 0.8), 0 0 20px rgba(255, 105, 180, 0.8), 0 0 30px rgba(255, 105, 180, 0.8);
+                transform: rotateX(0) rotateY(0);
+            }
+        }
+        .gif-container {
+            margin: 20px auto;
+            perspective: 1000px;
+        }
+        .gif-container img {
+            width: 200px;
+            height: auto;
+            animation: rotate 10s infinite linear;
+            transform-style: preserve-3d;
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+        .message {
+            font-size: 1.5em;
+            color: #ff6347;
+            margin-top: 20px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.7;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Feliz Aniversário, Evelym!</h1>
+    <div class="gif-container">
+        <img src="https://pt.vidnoz.com/bimg/feliz-aniversario-gif-engracado.gif" alt="Feliz Aniversário">
+        <img src="https://i.pinimg.com/originals/3e/0c/4a/3e0c4a8f86d0c44f3d6f363305378bf9.gif" alt="Festa">
+        <img src="https://24.media.tumblr.com/tumblr_m5wk2lF3fE1r0ralmo1_500.gif" alt="Bolo de Aniversário">
+    </div>
+    <p class="message">Espero que seu dia seja incrível e cheio de alegrias!</p>
+</body>
+</html>
